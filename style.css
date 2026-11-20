@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+.container {
+    position: relative; /* Needed so absolute elements lock inside it */
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;   /* Hides any overflow from the full-screen video */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-type: y mandatory;
+    overflow-y:scroll;
+}
+
+.content { 
+    position: relative;
+    z-index: 2; /* Sits cleanly on top of the video */
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 95px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.content a {
+    font-size: 23px;
+    color: #fff; 
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s ease; /* Adds a smooth transition for the hover effect */
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Fixed spelling to match "background-clip" from your HTML */
+.background-clip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1; /* Keeps it right behind the content */
+}
+.genre-card {
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 50%;
+    margin: 24px auto; /
+    height: auto;
+}
+body{
+    text-align:center;
+    background-color: #0D0F12;
+    color: #E0E6ED;
+}
+.page-header{
+    margin-top: 50px;
+}
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+h1{
+    font-family: "Poppins";
+}
+.bpm-badge{
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+p{
+    text-align:left;
+}
+
+.tech-house {
+    background: linear-gradient(135deg, #ff0055 0%, #ff5e00 100%);
+}
+.deep-house {
+    background: linear-gradient(135deg, #2e0854 0%, #180b30 100%);
+}
+.progressive-house {
+    background: linear-gradient(135deg, #0052d4 0%, #4364f7 50%, #6fb1fc 100%);
+}
+.afro-house {
+    background: linear-gradient(135deg, #b76e00 0%, #e65c00 100%);
+}
+.chicago-house {
+    background: linear-gradient(135deg, #8a2387 0%, #e94057 50%, #f27121 100%);
+
+.key-artists {
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(0, 0, 0, 0.35);
+    filter: blur(8px)
+    padding: 10px 14px;
+    border-radius: 8px;
+    display: inline-block;
+    height:auto;
+    width: 20%;
+    
+}
+.genre-card:hover {
+    animation: serve 3s forwards;
+}
+@keyframes serve {
+    from {
+        height: 200px;
+        width: 200px;
+    }
+    to {
+        height: 400px;
+        width: 400px;
+    }
+}
+.history-card {
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 50%;
+    margin: 24px auto; /
+    height: auto;
+}
+.left{
+    text-align:left;
+}
+.right{
+    text-align:right;
+}
+
+/* history page css*/ 
+
+.container2 {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.container2 section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    padding: 0 20px;
+}
+
+.one {
+    background-color: #C73363;
+}
+.two {
+    background-color: #D96B08;
+}
+.three {
+    background-color: #2D6DF6;
+}
+.four {
+    background-color: #331249;
+}
+.five {
+    background-color: #EA3E33;
+}
+img {
+    height:auto;
+    width:auto;
+}
+.art-card{
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 50%;
+    margin: 24px auto; /
+    height: auto;
+    background-color: #FFF5EE;
+    color:black;
+}
